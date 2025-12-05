@@ -1,1 +1,167 @@
-isiannya
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Atlet Bulu Tangkis</title>
+  <style>
+    :root{
+      --bg:#0e0e10;--card:#1a1a1d;--accent:#6a5cff;--muted:#b5b5b5
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, Arial, sans-serif;background:var(--bg);color:#fff;line-height:1.4}
+    .container{max-width:900px;margin:40px auto;padding:20px}
+
+    /* Navbar */
+    nav{display:flex;gap:14px;justify-content:center;background:rgba(26,26,29,0.95);padding:14px 20px;border-radius:0;border-bottom:1px solid rgba(255,255,255,0.06);position:fixed;top:0;left:0;width:100%;z-index:1000;backdrop-filter:blur(6px)}
+    nav a{color:var(--muted);text-decoration:none;font-weight:700;padding:6px 10px;border-radius:8px}
+    nav a:hover, nav a.active{background:rgba(106,92,255,0.12);color:var(--accent)}
+
+    header{display:flex;flex-direction:column;align-items:center;text-align:center;margin:26px 0}
+    .photo{width:180px;height:180px;border-radius:16px;overflow:hidden;border:4px solid var(--accent);box-shadow:0 10px 30px rgba(106,92,255,0.18)}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:14px 0 6px;font-size:28px}
+    p.lead{color:var(--muted);margin:0}
+
+    .card{background:var(--card);padding:18px;border-radius:12px;margin:18px 0;border:1px solid rgba(255,255,255,0.03)}
+    .card h2{margin-top:0}
+
+    /* Projects */
+    .projects-list .item{padding:10px;border-radius:10px;margin-bottom:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02))}
+    .projects-list .meta{color:var(--muted);font-size:14px}
+
+    /* Gallery grid */
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}
+    .gallery-grid img{width:100%;height:100px;object-fit:cover;border-radius:8px}
+
+    /* Contact icons */
+    .contacts{display:flex;flex-wrap:wrap;gap:12px}
+    .contact-btn{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,0.02);text-decoration:none;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+    .contact-btn img{width:28px;height:28px}
+    .contact-btn:hover{background:rgba(106,92,255,0.09);color:white}
+
+    footer{color:var(--muted);text-align:center;margin:20px 0}
+
+    /* Responsive */
+    @media (max-width:600px){.photo{width:120px;height:120px}.container{padding:12px}}
+
+    /* smooth scroll */
+    html{scroll-behavior:smooth}
+    figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container" style="margin-top:90px;">
+    <nav id="mainNav">
+      <a href="#about">Tentang</a>
+      <a href="#projects">Prestasi</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <section id="about" class="card">
+  <h2>Tentang Saya</h2>
+  <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+    <div class="photo"><img src="hayaexo.png" alt="Foto Atlet"></div>
+    <h1>Ahmad Fauzan</h1>
+    <p class="lead">Atlet Bulu Tangkis • Single & Double • Competitive Player</p>
+    <p style="max-width:600px;margin-top:14px;color:#b5b5b5;">
+      Saya adalah atlet bulu tangkis yang berdedikasi, berpengalaman dalam berbagai turnamen daerah dan nasional.
+      Memiliki kekuatan utama pada kecepatan, footwork, dan konsistensi pukulan. Saya rutin berlatih setiap hari
+      untuk meningkatkan teknik, stamina, dan mental bertanding.
+    </p>
+  </div>
+</section>
+
+    <section id="projects" class="card">
+      <h2>Prestasi & Turnamen</h2>
+      <div class="projects-list">
+        <div class="item"><strong>Juara 1 Kejuaraan Daerah</strong><div class="meta">Kategori Tunggal Putra — 2024</div></div>
+        <div class="item"><strong>Semifinalis Open Tournament</strong><div class="meta">Turnamen Kota — 2023</div></div>
+        <div class="item"><strong>Best Player</strong><div class="meta">Penghargaan pemain terbaik antar-klub — 2022</div></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>Galeri Latihan & Pertandingan</h2>
+      <div class="gallery-grid">
+
+        <figure>
+          <img src="bulu.jpg" alt="Latihan footwork">
+          <figcaption>Latihan footwork untuk meningkatkan kecepatan dan keseimbangan.</figcaption>
+        </figure>
+      
+        <figure>
+          <img src="solo.jpg" alt="Foto pose atlet">
+          <figcaption>Foto pertandingan tunggal putra.</figcaption>
+        </figure>
+      
+        <figure>
+          <img src="images.jpg" alt="Pertandingan tunggal putra">
+          <figcaption>Momen pertandingan ganda putra dengan fokus penuh.</figcaption>
+        </figure>
+      
+        <figure>
+          <img src="cihuy.jpg" alt="Latihan power smash">
+          <figcaption>Foto bersama sehabis pertandingan piala presiden.</figcaption>
+        </figure>
+      
+        <figure>
+          <img src="final-bulutangkis-dies-natalis-undiksha3.jpg" alt="Pertandingan final">
+          <figcaption>Pertandingan antar club.</figcaption>
+        </figure>
+      
+        <figure>
+          <img src="yyy).jpg" alt="Latihan teknik">
+          <figcaption>Latihan teknik rutin untuk menjaga performa terbaik.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Kontak Saya</h2>
+      <div class="contacts">
+        <a class="contact-btn" href="mailto:fauzanneysa78@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">Gmail</a>
+        <a class="contact-btn" href="https://wa.me/628131573561" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WA">WhatsApp</a>
+        <a class="contact-btn" href="https://facebook.com/AhmadFauzan" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB">Facebook</a>
+        <a class="contact-btn" href="https://instagram.com/andzannaaa" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="IG">Instagram</a>
+        <a class="contact-btn" href="https://youtube.com/@aion7" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YT">YouTube</a>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> Nama Atlet — Portfolio</footer>
+  </div>
+
+  <script>
+    // Highlight active nav link on scroll
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section, header');
+
+    function activateNav(){
+      let index = sections.length;
+      while(--index && window.scrollY + 120 < sections[index].offsetTop){}
+      navLinks.forEach(link => link.classList.remove('active'));
+      const id = sections[index].id;
+      const active = document.querySelector('nav a[href="#'+id+'"]');
+      if(active) active.classList.add('active');
+    }
+    activateNav();
+    window.addEventListener('scroll', activateNav);
+
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
